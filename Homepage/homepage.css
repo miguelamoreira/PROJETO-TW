@@ -27,6 +27,9 @@ header {
     margin: 0 0 0 40px;
   }
 
+  #carrinho{
+    margin-right: 25px;
+  }
 
   main > .escolas {
     display: flex;
@@ -78,6 +81,7 @@ header {
 
 #ipp-geral {
   border-bottom: 5px solid rgb(201, 77, 36);
+  margin-right: 25px;
 }
 
 footer {
