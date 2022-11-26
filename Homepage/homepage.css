@@ -1,97 +1,131 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    background-color: (255, 255, 255);
-    color: (0, 0, 0);
-    margin: 80px auto 48px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: (255, 255, 255);
+  color: (0, 0, 0);
+  margin: 80px auto 48px auto;
 }
 
 header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-  }
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
 
 #logo-header {
-  padding-left: 80px;
+  margin-left: 90px;
 }
 
-  nav > a {
-    text-decoration: none;
-    color: rgb(201, 77, 36);
-    font-size: 20px;
-    font-weight: bold;
-    text-align: right;
-    margin: 0 0 0 40px;
-  }
-
-  #carrinho-de-compras {
-    margin-right: 25px;
-  }
-
-  main > .escolas {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-    position: relative;
-
-  }
-
-.escolas > a {
+nav > a {
   text-decoration: none;
+  color: rgb(201, 77, 36);
   font-size: 20px;
-  color: black;
+  font-weight: bold;
+  text-align: right;
+  margin: 30px;
 }
+
+#carrinho-de-compras {
+  margin-right: 90px;
+}
+
+.escolas {
+  grid-template-columns:auto auto auto auto;
+  grid-template-areas: "isep iscap ese esmae" 
+                        "estg ess esht esmad" 
+                        "ipp-geral";
+  padding: 80px
+}
+
+
+.escolas-1, .escolas-2, .escolas-3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+  padding: 20px;
+
+}
+
+#isep, #iscap, #ese, #esmae, #estg, #ess, #esht, #esmad, #ipp-geral {
+text-decoration: none;
+font-size: 20px;
+color: black;
+}
+
 
 #isep {
-  border-bottom: 5px solid rgb(179, 35, 23);
-  margin-left: 25px;
+border-bottom: 5px solid rgb(179, 35, 23);
+grid-area: isep;
 }
 
 #iscap {
-  border-bottom: 5px solid rgb(237, 28, 36);
+border-bottom: 5px solid rgb(237, 28, 36);
+grid-area: iscap;
 }
 
 #ese {
-  border-bottom: 5px solid rgb(28, 63, 148);
+border-bottom: 5px solid rgb(28, 63, 148);
+grid-area: ese;
 }
 
 #esmae {
-  border-bottom: 5px solid rgb(196, 150, 12);
+border-bottom: 5px solid rgb(196, 150, 12);
+grid-area: esmae;
 }
 
 #estg {
-  border-bottom: 5px solid rgb(0, 174, 255);
+border-bottom: 5px solid rgb(0, 174, 255);
+grid-area: estg;
 }
 
 #ess {
-  border-bottom: 5px solid rgb(255, 242, 0);
+border-bottom: 5px solid rgb(255, 242, 0);
+grid-area: ess;
 }
 
 #esht {
-  border-bottom: 5px solid rgb(0, 166, 81);
+border-bottom: 5px solid rgb(0, 166, 81);
+grid-area: esht;
 }
 
 #esmad {
-  border-bottom: 5px solid rgb(188, 190, 192);
+border-bottom: 5px solid rgb(188, 190, 192);
+grid-area: esmad;
 }
 
 #ipp-geral {
-  border-bottom: 5px solid rgb(201, 77, 36);
-  margin-right: 25px;
+border-bottom: 5px solid rgb(201, 77, 36);
+margin-right: 25px;
+grid-area: ipp-geral
 }
 
 footer {
-  background-color: gray;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
+background-color: gray;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: row;
+flex-grow: 1;
+padding: 30px;
+margin-top: auto;
+}
+
+.info > a {
+  text-decoration: none;
+  color: black;
+  background-color: #555454;
+}
+
+.info {
+  margin-right: 120px;
 }
 
 #logo-footer {
-  margin-left: -95px
+  margin-left: 70px;
 }
