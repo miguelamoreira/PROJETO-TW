@@ -32,101 +32,59 @@ nav > a {
   margin-right: 90px;
 }
 
-.escolas {
-  grid-template-columns:auto auto auto auto;
-  grid-template-areas: "isep iscap ese esmae" 
-                        "estg ess esht esmad" 
-                        "ipp-geral";
-  padding: 80px
-}
-
-
-.escolas-1, .escolas-2, .escolas-3 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: row;
+ul {
   position: relative;
-  padding: 20px;
-
+  display: flex;
+  flex-direction: row;
+  gap: 30px
 }
 
-#isep, #iscap, #ese, #esmae, #estg, #ess, #esht, #esmad, #ipp-geral {
-text-decoration: none;
-font-size: 20px;
-color: black;
-}
-
-ul li{
+ul li {
   position: relative;
   list-style: none;
 }
 
-ul li a{
-  text-decoration: none;
-  color:transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+#esht{
+  padding-left: 36px;
+  margin-left: 18px;
 }
 
-ul li a::before{
+#ess{
+  padding-left: 8px;
+}
+
+.escolas-1, .escolas-2{
+  margin-right: 25px;
+}
+
+ul li a {
+  font-size: 2em;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0,0,0,0.9);
+}
+
+.escolas-1, .escolas-2, .escolas-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li a::before {
+  content: attr(data-text);
   position: absolute;
-  overflow: hidden;
   color: var(--clr);
+  width: 0;
+  overflow: hidden;
   transition: 1s;
-  border-top: 5px solid var(--clr);
+  border-right: 8px solid var(--clr);
   -webkit-text-stroke: 1px var(--clr);
 }
 
-ul li a:hover::before{
+ul li a:hover::before {
   width: 100%;
-  filter: drop-shadow(0 0 25px var(--clr));
-}
-
-#isep {
-border-bottom: 5px solid rgb(179, 35, 23);
-grid-area: isep;
-}
-
-#iscap {
-border-bottom: 5px solid rgb(237, 28, 36);
-grid-area: iscap;
-}
-
-#ese {
-border-bottom: 5px solid rgb(28, 63, 148);
-grid-area: ese;
-}
-
-#esmae {
-border-bottom: 5px solid rgb(196, 150, 12);
-grid-area: esmae;
-}
-
-#estg {
-border-bottom: 5px solid rgb(0, 174, 255);
-grid-area: estg;
-}
-
-#ess {
-border-bottom: 5px solid rgb(255, 242, 0);
-grid-area: ess;
-}
-
-#esht {
-border-bottom: 5px solid rgb(0, 166, 81);
-grid-area: esht;
-}
-
-#esmad {
-border-bottom: 5px solid rgb(188, 190, 192);
-grid-area: esmad;
-}
-
-#ipp-geral {
-border-bottom: 5px solid rgb(201, 77, 36);
-margin-right: 25px;
-grid-area: ipp-geral
-}
+  filter: drop-shadow(0 0 25px var(--clr))
 
 footer {
 background-color: gray;
