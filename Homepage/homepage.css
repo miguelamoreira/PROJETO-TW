@@ -44,6 +44,19 @@ ul li {
   list-style: none;
 }
 
+#esht{
+  padding-left: 36px;
+  margin-left: 18px;
+}
+
+#ess{
+  padding-left: 8px;
+}
+
+.escolas-1, .escolas-2{
+  margin-right: 25px;
+}
+
 ul li a {
   font-size: 2em;
   text-decoration: none;
