@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="conta.css">
+    <title>Gestão de Conta</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo-header" src="PPorto—cor—vazado-01.png" alt="logótipo do Instituto Politécnico do Porto" title="Instituto Politécnico do Porto"
+            width="162" height="36">
+        </div>
+        <nav class="navbar">
+            <a href="#" class="seccoes" id="inicio">Início</a>
+            <a href="#" class="seccoes" id="produtos">Produtos</a>
+            <a href="#" class="seccoes" id="conta">Conta</a>
+            <a href="#" class="seccoes" id="carrinho-de-compras">Carrinho de compras</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Informações da conta</h1>
+        <section class="dados">
+            <form action="#" method="post" class="form">
+                <h2>Dados Pessoais</h2>
+                <div class="nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="data">
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" name="data" id="data">
+                </div>
+                <div class="email">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="telemovel"> <!-- Talvez fazer distinção dos indicativos -->
+                    <label for="telemovel">Telemóvel:</label>
+                    <input type="number" name="telemovel" id="telemovel">
+                </div>
+                <!-- Mudar para configurar palavra passe nova ? -->
+                <div class="password">
+                    <label for="passe">Password:</label>
+                    <input type="password" name="passe" id="passe">
+                    <label for="passe-confirm">Confirmar palavra-passe:</label>
+                    <input type="password" name="passe-confirm" id="passe-confirm">
+                </div>
+
+                <h2>Dados de faturação</h2>
+                <div class="pais"> <!-- Colocar lista pré-definida de países -->
+                    <label for="pais">País:</label>
+                    <input type="text" name="pais" id="pais">
+                </div>
+                <div class="morada">
+                    <label for="morada">Morada:</label>
+                    <input type="text" name="morada" id="morada">
+                </div>
+                <div class="codigo-postal">
+                    <label for="codigo-postal">Código de Postal:</label>
+                    <input type="number" name="codiog-postal" id="codigo-postal">
+                </div>
+                <!-- Colocar restrição de número de dígitos -->
+                <div class="nif">
+                    <label for="nif">Número de identificação fiscal (NIF):</label>
+                    <input type="number" name="nif" id="nif">
+                </div>
+
+                <h2>Dados de pagamento</h2>
+                <div class="titular">
+                    <label for="titular">Nome do títular do cartão:</label>
+                    <input type="text" name="titular" id="titular">
+                </div>
+                <!-- Colocar restrição de número de dígitos -->
+                <div class="num-cartao">
+                    <label for="num-cartao">Número do cartão bancário:</label>
+                    <input type="number" name="num-cartao" id="num-cartao">
+                </div>
+                <!-- Optar por ser o user a inserir a data ou opção de mês/ano -->
+                <div class="val-cartao">
+                    <label for="val-cartao">Validade do cartão bancário:</label>
+                    <input type="number" name="val-cartao" id="val-cartao">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <img id="logo-footer" src="PPorto—branco—vazado-01.png" alt="Logótipo do Instituto Politécnico do Porto" width="162" height="36">
+        </div>
+        <div class="morada">
+            <h4 class="footer titles">COMO CHEGAR AO P. PORTO</h4>
+            <address>
+                Rua Dr. Roberto Frias, 712<br>
+                4200-465 Porto<br>
+                Portugal<br>
+                T. + 351 225 571 000<br>
+                F. + 351 225 020 772<br>
+                E. ipp@ipp.pt<br>
+            </address>
+        </div>
+        <div class="info">
+            <a href="Contacto/contacto.html"><h4 class="footer titles">FALE CONNOSCO<br></h4></a>
+            <p>TW Grupo 13 ©</p>
+        </div>
+    </footer>
+</body>
+</html>

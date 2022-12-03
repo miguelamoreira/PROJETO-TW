@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: (255, 255, 255);
+    color: (0, 0, 0);
+    margin: 80px auto 48px auto;
+}
+  
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+  
+#logo-header {
+    margin-left: 90px;
+}
+  
+nav > a {
+    text-decoration: none;
+    color: rgb(201, 77, 36);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin: 30px;
+}
+  
+#carrinho-de-compras {
+    margin-right: 90px;
+}
+
+.pagina-produto {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.tshirt {
+    border: solid 1px black;
+}
+
+.produto-fotos {
+    flex: 60%;
+}
+
+
+.produto-info {
+    display: block; 
+    flex: 40%;
+} 
+
+
+footer {
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 30px;
+    margin-top: auto;
+}
+    
+.info > a {
+    text-decoration: none;
+    color: black;
+    background-color: #555454;
+}
+    
+.info {
+    margin-right: 120px;
+}
+    
+#logo-footer {
+    margin-left: 70px;
+}
