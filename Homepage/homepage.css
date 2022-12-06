@@ -88,7 +88,7 @@ ul li a:hover::before {
 
 footer {
 background-color: gray;
-width: 100%;
+width: 96%;
 display: flex;
 align-items: center;
 justify-content: space-between;
