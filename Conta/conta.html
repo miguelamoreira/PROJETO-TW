@@ -22,7 +22,9 @@
     </header>
 
     <main>
-        <div class="barra">&nbsp;</div>
+        <div>
+            <p class="barra">&nbsp;</p>
+        </div>
         <h1>Informações da conta</h1>
         <section class="dados">
             <form action="#" method="post" class="form">
@@ -62,12 +64,12 @@
                 </div>
                 <div class="codigo-postal">
                     <label for="codigo-postal">Código de Postal:</label>
-                    <input type="number" name="codiog-postal" id="codigo-postal">
+                    <input type="number" name="codigo-postal" id="codigo-postal" >
                 </div>
                 <!-- Colocar restrição de número de dígitos -->
                 <div class="nif">
                     <label for="nif">Número de identificação fiscal (NIF):</label>
-                    <input type="number" name="nif" id="nif">
+                    <input type="text" name="nif" id="nif" pattern="[0-9]{9}" maxlength="9" minlength="9">
                 </div>
 
                 <h2 class="barra">Dados de pagamento</h2>
@@ -78,12 +80,15 @@
                 <!-- Colocar restrição de número de dígitos -->
                 <div class="num-cartao">
                     <label for="num-cartao">Número do cartão bancário:</label>
-                    <input type="number" name="num-cartao" id="num-cartao">
+                    <input type="text" name="num-cartao" id="num-cartao" pattern="[0-9]{16}" maxlength="16" minlength="16">
                 </div>
                 <!-- Optar por ser o user a inserir a data ou opção de mês/ano -->
                 <div class="val-cartao">
                     <label for="val-cartao">Validade do cartão bancário:</label>
-                    <input type="number" name="val-cartao" id="val-cartao">
+                    <input type="month" name="val-cartao" id="val-cartao">
+                </div>
+                <div id="submit">
+                    <input type="submit" value="Guardar">
                 </div>
             </form>
         </section>

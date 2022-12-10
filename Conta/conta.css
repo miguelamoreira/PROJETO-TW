@@ -16,7 +16,8 @@ header {
 }
   
 #logo-header {
-    margin-left: 40px;
+    position: relative;
+    left: 40px;
 }
   
 nav > a {
@@ -33,27 +34,62 @@ nav > a:hover {
     color: rgba(201,77,36,0.5);
     text-decoration: underline;
 }
-  
+
 .barra {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    border-bottom: 1px dotted black;
-    border-top: 1px dotted black;
-    background-color: rgba(0,0,0,0.1);
-  }
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px dotted black;
+  border-top: 1px dotted black;
+  background-color: rgba(0,0,0,0.1);
+}
+
+
 
 h1, h2 {
     margin-left: 85px;
 }
 
+.form {
+    display: block;
+    padding-bottom: 20px;
+}
 
+.form div {
+    position: relative;
+    left: 40px;
+}
 
+.form input {
+    border: 1px solid rgba(0,0,0, 0.5);
+    padding: 10px;
+    margin-top: 30px;
+    width: 200px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+    
+.form input {
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+    
+.form input:hover {
+    border: 1px solid rgb(201, 77, 36);
+}
 
+#submit {
+    position: relative;
+    right: -40px;
+}
 
-
+.form input[type="submit"]:hover {
+    color:rgb(201, 77, 36);
+}
+    
 footer {
     background-color: gray;
     position: absolute;
@@ -64,27 +100,29 @@ footer {
     flex-direction: row;
     padding-top: 20px;
     padding-bottom: 20px;
-    }
-    
-    .contacto > a {
-      text-decoration: none;
-      color: rgb(0,0,0);
-    }
-    
-    .contacto {
-      margin-right: 40px;
-    }
-    
-    .contacto-titulo {
-      background-color: rgb(168, 167, 167);
-      padding: 10px;
-      transform: fade-in background-color 5s;
-    }
-    
-    .contacto-titulo:hover {
-      background-color: rgba(168, 167, 167, 0.5);
-    }
-    
-    #logo-footer {
-      margin-left: 40px;
-    }
+}
+      
+  .contacto > a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+      
+.contacto {
+    position: relative;
+    right: 40px;
+}
+      
+.contacto-titulo {
+    background-color: rgb(168, 167, 167);
+    padding: 10px;
+    transform: fade-in background-color 5s;
+}
+      
+.contacto-titulo:hover {
+    background-color: rgba(168, 167, 167, 0.5);
+}
+          
+#logo-footer {
+    position: relative;
+    left: 40px;
+}
