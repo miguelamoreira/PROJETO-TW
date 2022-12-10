@@ -5,7 +5,7 @@ body {
     background-color: (255, 255, 255);
     color: (0, 0, 0);
     margin: 80px auto 48px auto;
-  }
+}
   
 header {
     display: flex;
@@ -16,7 +16,7 @@ header {
 }
   
 #logo-header {
-    margin-left: 90px;
+    margin-left: 40px;
 }
   
 nav > a {
@@ -26,11 +26,24 @@ nav > a {
     font-weight: bold;
     text-align: right;
     margin: 30px;
+    transition: color 4s, text-decoration 4s;
 }
   
-#carrinho-de-compras {
-    margin-right: 90px;
+nav > a:hover {
+    color: rgba(201,77,36,0.5);
+    text-decoration: underline;
 }
+  
+.barra {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    border-top: 1px dotted black;
+    background-color: rgba(0,0,0,0.1);
+  }
 
 h1, h2 {
     margin-left: 85px;
@@ -39,28 +52,39 @@ h1, h2 {
 
 
 
+
+
 footer {
     background-color: gray;
+    position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    flex-grow: 1;
-    padding: 30px;
-    margin-top: auto;
-}
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
     
-.info > a {
-    text-decoration: none;
-    color: black;
-    background-color: #555454;
-}
+    .contacto > a {
+      text-decoration: none;
+      color: rgb(0,0,0);
+    }
     
-.info {
-    margin-right: 120px;
-}
+    .contacto {
+      margin-right: 40px;
+    }
     
-#logo-footer {
-    margin-left: 70px;
-}
+    .contacto-titulo {
+      background-color: rgb(168, 167, 167);
+      padding: 10px;
+      transform: fade-in background-color 5s;
+    }
+    
+    .contacto-titulo:hover {
+      background-color: rgba(168, 167, 167, 0.5);
+    }
+    
+    #logo-footer {
+      margin-left: 40px;
+    }
