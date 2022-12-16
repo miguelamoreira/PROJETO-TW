@@ -16,7 +16,7 @@ header {
 }
 
 #logo-header {
-  margin-left: 90px;
+  margin-left: 40px;
 }
 
 nav > a {
@@ -26,10 +26,35 @@ nav > a {
   font-weight: bold;
   text-align: right;
   margin: 30px;
+  transition: color 4s, text-decoration 4s;
 }
 
-#carrinho-de-compras {
-  margin-right: 90px;
+nav > a:hover {
+  color: rgba(201,77,36,0.5);
+  text-decoration: underline;
+}
+
+#imagem-ipp {
+  --b: 10px; 
+  padding: var(--b);
+  border: calc(2*var(--b)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1*var(--b));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 90deg,#000 0);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.barra {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px dotted black;
+  border-top: 1px dotted black;
+  background-color: rgba(0,0,0,0.1);
 }
 
 ul {
@@ -45,8 +70,7 @@ ul li {
 }
 
 #esht{
-  padding-left: 36px;
-  margin-left: 18px;
+  margin-left: 55px;
 }
 
 #ess{
@@ -87,28 +111,111 @@ ul li a:hover::before {
   filter: drop-shadow(0 0 25px var(--clr))
 }
 
+.produtos-homepage {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 750px;
+  height:350px;
+  background: rgb(255,255,255);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+  transition: all 0.3s;
+  margin:40px;
+  display: flex; 
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card .imagem-produto {
+  padding: 30px;
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+
+.card .descricao {
+  padding: 30px;
+  float: left;
+  width: 55%;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+.card .descricao h1 {
+  color: rgb(0,0,0);
+  font-weight: 200;
+  padding-top: 15px;
+  margin: 0;
+  font-size: 30px;
+}
+
+.card .descricao h2 {
+  color: rgba(0,0,0,0.6);
+  margin: 0;
+  font-weight: 400;
+}
+
+.card .descricao p {
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(0,0,0,0.5);
+  padding: 20px 0px;
+}
+.card .descricao button {
+  border: 1px solid rgba(0,0,0, 0.5);
+  padding: 10px;
+  margin-top: 30px;
+  width: 200px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.card .descricao button a {
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+
+.card .descricao button:hover {
+  border: 1px solid rgb(201, 77, 36);
+}
+
+.card .descricao button a:hover{
+  color: rgb(201, 77, 36);
+}
+
 footer {
 background-color: gray;
+position: absolute;
 width: 100%;
 display: flex;
 align-items: center;
 justify-content: space-between;
 flex-direction: row;
-flex-grow: 1;
-padding: 30px;
-margin-top: auto;
+padding-top: 20px;
+padding-bottom: 20px;
 }
 
-.info > a {
+.contacto > a {
   text-decoration: none;
-  color: black;
-  background-color: #555454;
+  color: rgb(0,0,0);
 }
 
-.info {
-  margin-right: 120px;
+.contacto {
+  margin-right: 40px;
+}
+
+.contacto-titulo {
+  background-color: rgb(168, 167, 167);
+  padding: 10px;
+  transform: fade-in background-color 5s;
+}
+
+.contacto-titulo:hover {
+  background-color: rgba(168, 167, 167, 0.5);
 }
 
 #logo-footer {
-  margin-left: 70px;
+  margin-left: 40px;
 }

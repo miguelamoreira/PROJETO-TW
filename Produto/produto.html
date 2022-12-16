@@ -22,28 +22,70 @@
     </header>
 
     <main>
-    <section class="pagina-produto">
-        <div class="produto-fotos row">
-            <div class="column">
-                <img src="tshirt1.png" alt="Tshirt de frente" width="350px" height="400px" class="tshirt">
-                <img src="tshirt2.png" alt="Tshirt de frente" width="350px" height="400px" class="tshirt">
+        <div>
+            <p class="barra">&nbsp;</p>
+        </div>
+        
+        <section class="pagina-produto">
+            <div class="card-produto"> <!-- Talvez fazer um "carrossel" com estas imagens -->
+                <div class="card">
+                    <div class="imagens-produto">
+                        <img src="tshirt-branca-1.png" height="600px">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagens-produto">
+                        <img src="tshirt-branca-2.png" height="600px">
+                    </div>
+                </div>
             </div>
-            <div class="column">
-                <img src="tshirt3.png" alt="Tshirt de frente" width="350px" height="400px" class="tshirt">
-                <img src="tshirt4.png" alt="Tshirt de frente" width="350px" height="400px" class="tshirt">
+            <div class="info">
+                <h1>T-SHIRT ESMAD</h1>
+                <h2>15€</h2>
+                <p>T-shirt feita de algodão com o logótipo da Escola de Media Artes e Design (ESMAD) do Instituto Politécnico do Porto.<br>
+                Cor branca com logótipo a preto.</p>
+                <div class="tamanhos">
+                    <button><a href="#">XS</a></button>
+                    <button><a href="#">S</a></button>
+                    <button><a href="#">M</a></button>
+                    <button><a href="#">L</a></button>
+                    <button><a href="#">XL</a></button>
+                </div>
+                <div class="quantidade">
+                    <label for="quant">Quantidade:</label>
+                    <input type="number" name="quant" id="quant" min="1" max="10">
+                </div>
+                <button><a href="#">ADICIONAR AO CARRINHO</a></button>
+            </div>
+        </section>
+
+        <div>
+            <h2 class="barra">PRODUTOS SUGERIDOS</h2>
+        </div>
+        <div class="row-produtos">
+            <div class="card-sugestao">
+            <div class="imagem-produto">
+                <img src="tote-preta-1.png" height="300px">
+            </div>
+            <div class="descricao">
+                <h2>TOTEBAG ESMAD</h2>
+                <h1>10€</h1>
+                <p>Totebag feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
+                <button><a href="#">ADICIONAR AO CARRINHO</a></button>
+            </div>
+            </div>
+            <div class="card-sugestao">
+                <div class="imagem-produto">
+                    <img src="tote-branca-1.png" height="300px">
+                </div>
+                <div class="descricao">
+                    <h2>TOTEBAG ESMAD</h2>
+                    <h1>10€</h1>
+                    <p>Totebag feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
+                    <button><a href="#">ADICIONAR AO CARRINHO</a></button>
+                </div>
             </div>
         </div>
-        <div class="produto-info">
-            <h1>TSHIRT ESMAD</h1>
-            <h2>Preço</h2>
-            <h3>Quantidade:</h3>
-            <div class="produto-tamanho"><h3>Tamanho: </h3></div>
-            <br><br>
-            <h3>Adicionar ao carrinho</h3>
-            <h3>Descrição</h3>
-            <p>lorem ipsum...</p>
-        </div>
-    </section>
     </main>
 
     <footer>
@@ -51,7 +93,7 @@
             <img id="logo-footer" src="PPorto—branco—vazado-01.png" alt="Logótipo do Instituto Politécnico do Porto" width="162" height="36">
         </div>
         <div class="morada">
-            <h4 class="footer titles">COMO CHEGAR AO P. PORTO</h4>
+            <h4 class="morada-titulo">COMO CHEGAR AO P. PORTO</h4>
             <address>
                 Rua Dr. Roberto Frias, 712<br>
                 4200-465 Porto<br>
@@ -61,9 +103,9 @@
                 E. ipp@ipp.pt<br>
             </address>
         </div>
-        <div class="info">
-            <a href="Contacto/contacto.html"><h4 class="footer titles">FALE CONNOSCO<br></h4></a>
-            <p>TW Grupo 13 ©</p>
+        <div class="contacto">
+            <a href="Contacto/contacto.html"><h4 class="contacto-titulo">FALE CONNOSCO<br></h4></a>
+            <p>TW Grupo 13 &copy;</p>
         </div>
     </footer>
 </body>
