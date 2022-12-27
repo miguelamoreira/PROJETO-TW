@@ -29,7 +29,19 @@ nav > a {
   transition: color 4s, text-decoration 4s;
 }
 
-nav > a:hover {
+span {
+  border: 1px solid rgb(201, 77, 36);
+  border-radius: 50%;
+  padding: 10px 20px;
+  transition: color 4s, border 4s
+}
+
+span:hover {
+  border: 1px solid rgba(201,77,36,0.5);
+  color: rgba(201,77,36,0.5)
+}
+
+nav > a:hover, nav > span:hover {
   color: rgba(201,77,36,0.5);
   text-decoration: underline;
 }
@@ -179,6 +191,7 @@ ul li a:hover::before {
 
 .card .descricao button:hover {
   border: 1px solid rgb(201, 77, 36);
+  color: rgb(201, 77, 36)
 }
 
 .card .descricao button a:hover{
@@ -219,3 +232,5 @@ padding-bottom: 20px;
 #logo-footer {
   margin-left: 40px;
 }
+
+
