@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo-header" src="../images/logo-header.png" alt="logótipo do Instituto Politécnico do Porto" title="Instituto Politécnico do Porto"
+            width="180" height="40">
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="seccoes" id="inicio">Início</a>
+            <a href="index.html#escolas" class="seccoes" id="produtos">Produtos</a>
+            <a href="conta.html" class="seccoes" id="conta">Conta</a>
+            <a href="carrinho.html" class="seccoes" id="carrinho-de-compras">Carrinho-de-compras
+                <span id="contagem">0</span>
+            </a>
+            <a class="icon" onclick="navbar()">
+                <img src="../images/navbar.svg">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <p class="barra">&nbsp;</p>
+        </div>
+        <div class="banner">
+            <img id="imagem-ipp" src="../images/banner-index.jpeg" alt="Imagem institucional">
+        </div>
+        <div class="escolas" id="escolas">
+            <h2 id="titulo-escolas" class="barra">PESQUISA POR ESCOLA</h2>
+            <ul class="escolas-1">
+                <li id="isep" style="--clr: rgb(179, 35, 23)">
+                    <a href="#" data-text="&nbsp;ISEP">&nbsp;ISEP&nbsp;</a>
+                </li>
+                <li id="iscap" style="--clr: rgb(237, 28, 36)">
+                    <a href="#" data-text="&nbsp;ISCAP">&nbsp;ISCAP&nbsp;</a>
+                </li>
+                <li id="ese" style="--clr: rgb(28, 63, 148)">
+                    <a href="#" data-text="&nbsp;ESE">&nbsp;ESE&nbsp;</a>
+                </li>
+                <li id="esmae" style="--clr: rgb(196, 150, 12)">
+                    <a href="#" data-text="&nbsp;ESMAE">&nbsp;ESMAE&nbsp;</a>
+                </li>
+            </ul>
+            <ul class="escolas-2">
+                <li id="estg" style="--clr: rgb(0, 174, 255)">
+                    <a href="#" data-text="&nbsp;ESTG">&nbsp;ESTG&nbsp;</a>
+                </li>
+                <li id="ess" style="--clr: rgb(255, 242, 0)">
+                    <a href="#" data-text="&nbsp;ESS">&nbsp;ESS&nbsp;</a>
+                </li>
+                <li id="esht" style="--clr: rgb(0, 166, 81)">
+                    <a href="#" data-text="&nbsp;ESHT">&nbsp;ESHT&nbsp;</a>
+                </li>
+                <li id="esmad" style="--clr: rgb(188, 190, 192)">
+                    <a href="produtos-esmad.html" data-text="&nbsp;ESMAD">&nbsp;ESMAD&nbsp;</a>
+                </li>
+            </ul>
+            <ul class="escolas-3">
+                <li id="ipp-geral" style="--clr: rgb(201, 77, 36)">
+                    <a href="#" data-text="&nbsp;IPP&nbsp;(GERAL)">&nbsp;IPP (GERAL)&nbsp;</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 id="produtos-populares" class="barra">PRODUTOS MAIS POPULARES</h2>
+            <div class="produtos-homepage">
+                <div class="card">
+                <div class="imagem-produto">
+                    <a href="produto-totebag-preta.html"><img src="../images/tote-preta-1.png" height="300px"></a>
+                </div>
+                <div class="descricao">
+                    <h2>TOTEBAG PRETA ESMAD</h2>
+                    <h1>10€</h1>
+                    <p>Totebag feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
+                    <button id="produto-1" data-id="1">ADICIONAR AO CARRINHO</button>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="imagem-produto">
+                        <a href="produto-tshirt-branca.html"><img src="../images/tshirt-branca-1.png" height="300px"></a>
+                    </div>
+                    <div class="descricao">
+                        <h2>T-SHIRT BRANCA ESMAD</h2>
+                        <h1>15€</h1>
+                        <p>T-shirt feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
+                        <button id="produto-2" data-id="2">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img id="logo-footer" src="../images/logo-footer.png" alt="Logótipo do Instituto Politécnico do Porto" width="180" height="40">
+        </div>
+        <div class="morada">
+            <h4 class="morada-titulo">COMO CHEGAR AO P. PORTO</h4>
+            <address>
+                Rua Dr. Roberto Frias, 712<br>
+                4200-465 Porto<br>
+                Portugal<br>
+                T. + 351 225 571 000<br>
+                F. + 351 225 020 772<br>
+                E. ipp@ipp.pt<br>
+            </address>
+        </div>
+        <div class="contacto">
+            <a href="contacto.html"><h4 class="contacto-titulo">FALE CONNOSCO<br></h4></a>
+            <p>TW Grupo 13 &copy;</p>
+        </div>
+    </footer>
+    <script src="../scripts/index.js"></script>
+</body>
+</html>

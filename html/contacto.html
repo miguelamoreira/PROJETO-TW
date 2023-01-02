@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo-header" src="../images/logo-header.png" alt="logótipo do Instituto Politécnico do Porto" title="Instituto Politécnico do Porto"
+            width="180" height="40">
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="seccoes" id="inicio">Início</a>
+            <a href="index.html#escolas" class="seccoes" id="produtos">Produtos</a>
+            <a href="conta.html" class="seccoes" id="conta">Conta</a>
+            <a href="carrinho.html" class="seccoes" id="carrinho-de-compras">Carrinho-de-compras
+                <span id="contagem">0</span>
+            </a>
+            <a class="icon" onclick="navbar()">
+                <img src="../images/navbar.svg">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <p class="barra-header">&nbsp;</p>
+        </div>
+        <section>
+            <div class="card"> 
+                <h1 class="barra">OPINIÕES - RECLAMAÇÕES - ELOGIOS</h1>
+                <div class="form">
+                    <form action="#">
+                        <div class="nome">
+                            <label for="nome">Nome: </label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <br>
+                        <div class="email">
+                            <label for="email">E-mail: </label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <br>
+                        <div class="assunto">
+                            <label for="assunto">Assunto: </label>
+                            <input type="text" name="assunto" id="assunto">
+                        </div>
+                        <br>
+                        <div class="exposicao">
+                            <label for="exposicao">Exposição: </label><br>
+                            <textarea name="exposicao" id="exposicao" placeholder="Escreva aqui a sua mensagem...">
+                        </textarea>
+                        </div>
+                        <input type="submit" value="Submeter" onclick="submeter()">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img id="logo-footer" src="../images/logo-footer.png" alt="Logótipo do Instituto Politécnico do Porto" width="180" height="40">
+        </div>
+        <div class="morada">
+            <h4 class="morada-titulo">COMO CHEGAR AO P. PORTO</h4>
+            <address>
+                Rua Dr. Roberto Frias, 712<br>
+                4200-465 Porto<br>
+                Portugal<br>
+                T. + 351 225 571 000<br>
+                F. + 351 225 020 772<br>
+                E. ipp@ipp.pt<br>
+            </address>
+        </div>
+        <div class="contacto">
+            <a href="contacto.html"><h4 class="contacto-titulo">FALE CONNOSCO<br></h4></a>
+            <p>TW Grupo 13 &copy;</p>
+        </div>
+    </footer>
+    <script src="../scripts/contacto.js"></script>
+</body>
+</html>
