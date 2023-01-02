@@ -12,16 +12,17 @@ header {
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
-  padding-bottom: 30px;
 }
 
 #logo-header {
-  margin-left: 40px;
+  position: relative;
+  left: 40px;
+  bottom: 10px;
 }
 
 nav > a {
   text-decoration: none;
-  color: rgb(201, 77, 36);
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: bold;
   text-align: right;
@@ -30,20 +31,29 @@ nav > a {
 }
 
 span {
-  border: 1px solid rgb(201, 77, 36);
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 50%;
   padding: 10px 20px;
-  transition: color 4s, border 4s
 }
 
 span:hover {
-  border: 1px solid rgba(201,77,36,0.5);
-  color: rgba(201,77,36,0.5)
+  border: 1px solid rgba(201,77,36);
+  color: rgb(201,77,36)
 }
 
 nav > a:hover, nav > span:hover {
-  color: rgba(201,77,36,0.5);
-  text-decoration: underline;
+  color: rgb(201,77,36);
+}
+
+.navbar .icon {
+  display: none;
+  position: relative;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+#banner {
+  padding: 20px;
 }
 
 #imagem-ipp {
@@ -52,10 +62,11 @@ nav > a:hover, nav > span:hover {
   border: calc(2*var(--b)) solid #0000;
   outline: 1px solid #000;
   outline-offset: calc(-1*var(--b));
-  background: conic-gradient(from 90deg at 1px 1px,#0000 90deg,#000 0);
+  background: conic-gradient(from 90deg at 1px 1px,rgb(255,255,255) 90deg,rgb(0,0,0) 0);
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 92%;
 }
 
 .barra {
@@ -134,7 +145,7 @@ ul li a:hover::before {
   background: rgb(255,255,255);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
   transition: all 0.3s;
-  margin:40px;
+  margin: 20px 40px;
   display: flex; 
 }
 .card:hover {
@@ -184,18 +195,15 @@ ul li a:hover::before {
   font-weight: 500;
 }
 
-.card .descricao button a {
+.card .descricao button {
   text-decoration: none;
   color: rgb(0,0,0);
+  cursor: pointer;
 }
 
 .card .descricao button:hover {
   border: 1px solid rgb(201, 77, 36);
   color: rgb(201, 77, 36)
-}
-
-.card .descricao button a:hover{
-  color: rgb(201, 77, 36);
 }
 
 footer {
@@ -206,8 +214,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 flex-direction: row;
-padding-top: 20px;
-padding-bottom: 20px;
+padding: 20px 0px;
 }
 
 .contacto > a {
@@ -216,7 +223,8 @@ padding-bottom: 20px;
 }
 
 .contacto {
-  margin-right: 40px;
+  position: relative;
+  right: 40px;
 }
 
 .contacto-titulo {
@@ -230,7 +238,95 @@ padding-bottom: 20px;
 }
 
 #logo-footer {
-  margin-left: 40px;
+  position: relative;
+  left: 40px;
 }
 
+@media screen and (max-width: 1200px) and (min-width:769px) {
+.navbar a {
+  display: none;
+  font-size: 16px;
+  margin: 5px;
+}
 
+.navbar .icon {
+  bottom: 15px;
+}
+
+.navbar a.icon {
+  float: right;
+  display: block;
+}
+
+.navbar.responsive {
+  position: relative;
+}
+
+.navbar.responsive a.icon {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+}
+
+.navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.produtos-homepage {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 750px;
+  height: 350px;
+  margin: 20px 40px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.navbar a {
+  display: none;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.navbar .icon {
+  bottom: 10px;
+}
+    
+.navbar a.icon {
+  float: right;
+  display: block;
+}
+    
+.navbar.responsive {
+  position: relative;
+}
+    
+.navbar.responsive a.icon {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+}
+    
+.navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.produtos-homepage {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+.card {
+  width: 600px;
+  height: 350px;
+}
+}

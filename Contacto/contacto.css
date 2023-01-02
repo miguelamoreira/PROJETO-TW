@@ -12,17 +12,17 @@ header {
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
-  padding-bottom: 30px;
 }
 
 #logo-header {
   position: relative;
   left: 40px;
+  bottom: 10px;
 }
 
 nav > a {
   text-decoration: none;
-  color: rgb(201, 77, 36);
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: bold;
   text-align: right;
@@ -30,9 +30,26 @@ nav > a {
   transition: color 4s, text-decoration 4s;
 }
 
-nav > a:hover {
-  color: rgba(201,77,36,0.5);
-  text-decoration: underline;
+span {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 10px 20px;
+}
+
+span:hover {
+  border: 1px solid rgba(201,77,36);
+  color: rgb(201,77,36)
+}
+
+nav > a:hover, nav > span:hover {
+  color: rgb(201,77,36);
+}
+
+.navbar .icon {
+  display: none;
+  position: relative;
+  bottom: 30px;
+  cursor: pointer;
 }
 
 .barra-header {
@@ -95,13 +112,14 @@ h1, h2 {
   height: 300px;
 }
 
+.form input:hover, .form textarea:hover {
+  border: 1px solid rgb(201, 77, 36);
+}
+
 .form input[type="submit"] {
   width: 200px;
   height: 50px;
-}
-  
-.form input:hover, .form textarea:hover {
-  border: 1px solid rgb(201, 77, 36);
+  cursor: pointer;
 }
 
 #submit {
@@ -121,19 +139,18 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
   }
   
-  .contacto > a {
-    text-decoration: none;
-    color: rgb(0,0,0);
-  }
+.contacto > a {
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
   
-  .contacto {
-    position: relative;
-    right: 40px;
-  }
+.contacto {
+  position: relative;
+  right: 40px;
+}
   
 .contacto-titulo {
   background-color: rgb(168, 167, 167);
@@ -149,4 +166,99 @@ footer {
   position: relative;
   left: 40px;
 }
+  
+@media screen and (max-width: 1200px) and (min-width:769px) {
+.navbar a {
+  display: none;
+  font-size: 16px;
+  margin: 5px;
+}
+  
+.navbar .icon {
+  bottom: 15px;
+}
+  
+.navbar a.icon {
+  float: right;
+  display: block;
+}
+  
+.navbar.responsive {
+  position: relative;
+}
+  
+.navbar.responsive a.icon {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+}
+  
+.navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.card {
+  width: 650px;
+}
+   
+.form input {
+  width: 450px;
+  height: 15px;
+}
+  
+.form textarea {
+  width:400px;
+  height: 250px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.navbar a {
+  display: none;
+  font-size: 16px;
+  margin: 5px;
+}
+    
+.navbar .icon {
+  bottom: 10px;
+}
+        
+.navbar a.icon {
+  float: right;
+  display: block;
+}
+        
+.navbar.responsive {
+  position: relative;
+}
+        
+.navbar.responsive a.icon {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+}
+        
+.navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+    
+.card {
+  width: 550px;
+}
+     
+.form input {
+  width: 250px;
+  height: 15px;
+}
+    
+.form textarea {
+  width:300px;
+  height: 200px;
+}
+}
+  
   

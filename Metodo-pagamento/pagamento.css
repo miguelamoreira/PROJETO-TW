@@ -7,45 +7,51 @@ body {
     margin: 80px auto 48px auto;
   }
   
-  header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-bottom: 30px;
-  }
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
   
-  #logo-header {
-    margin-left: 40px;
-  }
+#logo-header {
+  position: relative;
+  left: 40px;
+  bottom: 10px;
+}
   
-  nav > a {
-    text-decoration: none;
-    color: rgb(201, 77, 36);
-    font-size: 20px;
-    font-weight: bold;
-    text-align: right;
-    margin: 30px;
-    transition: color 4s, text-decoration 4s;
-  }
-  
-  nav > a:hover {
-    color: rgba(201,77,36,0.5);
-    text-decoration: underline;
-  }
-  
-  #imagem-ipp {
-    --b: 10px; 
-    padding: var(--b);
-    border: calc(2*var(--b)) solid #0000;
-    outline: 1px solid #000;
-    outline-offset: calc(-1*var(--b));
-    background: conic-gradient(from 90deg at 1px 1px,#0000 90deg,#000 0);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
- 
+nav > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin: 30px;
+  transition: color 4s, text-decoration 4s;
+}
+
+#contagem {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 10px 20px;
+}
+
+#contagem:hover {
+  border: 1px solid rgba(201,77,36);
+  color: rgb(201,77,36)
+}
+
+nav > a:hover, #contagem:hover {
+  color: rgb(201,77,36);
+}
+
+.navbar .icon {
+  display: none;
+  position: relative;
+  bottom: 30px;
+  cursor: pointer;
+}
+
 .barra-header {
   padding: 10px;
   border-bottom: 1px dotted black;
@@ -76,7 +82,7 @@ h1, h2 {
   flex-flow: column wrap;
 }
 
-.dados-pagamento:hover, .dados-faturação:hover, .dados-pessoais:hover {
+.dados-pagamento:hover {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -149,8 +155,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
 }
     
 .contacto > a {
@@ -176,4 +181,77 @@ footer {
   margin-left: 40px;
 }
 
-    
+@media screen and (max-width: 1200px) and (min-width:769px) {
+.navbar a {
+  display: none;
+  font-size: 16px;
+  margin: 5px;
+}
+  
+.navbar .icon {
+  bottom: 15px;
+}
+  
+.navbar a.icon {
+  float: right;
+  display: block;
+}
+  
+.navbar.responsive {
+  position: relative;
+}
+  
+.navbar.responsive a.icon {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+}
+  
+.navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.dados-pagamento {
+  width: 600px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.navbar a {
+  display: none;
+  font-size: 16px;
+  margin: 5px;
+}
+  
+.navbar .icon {
+  bottom: 10px;
+}
+      
+.navbar a.icon {
+  float: right;
+  display: block;
+}
+      
+.navbar.responsive {
+  position: relative;
+}
+      
+.navbar.responsive a.icon {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+}
+      
+.navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.dados-pagamento {
+  width: 400px;
+}
+}
+  

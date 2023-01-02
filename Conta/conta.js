@@ -6,3 +6,7 @@ function navbar() {
       x.className = "navbar";
     }
 }
+
+function submeter() {
+    alert("Dados alterados!")
+}

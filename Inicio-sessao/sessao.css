@@ -18,17 +18,17 @@ header {
 	align-items: flex-start;
 	justify-content: space-between;
 	flex-direction: row;
-	padding-bottom: 30px;
 }
   
 #logo-header {
 	position: relative;
 	left: 40px;
+	bottom: 10px;
 }
   
 nav > a {
 	text-decoration: none;
-	color: rgb(201, 77, 36);
+	color: rgb(0, 0, 0);
 	font-size: 20px;
 	font-weight: bold;
 	text-align: right;
@@ -36,9 +36,26 @@ nav > a {
 	transition: color 4s, text-decoration 4s;
 }
   
-nav > a:hover {
-	color: rgba(201,77,36,0.5);
-	text-decoration: underline;
+#contagem {
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 50%;
+	padding: 10px 20px;
+}
+  
+#contagem:hover {
+	border: 1px solid rgba(201,77,36);
+	color: rgb(201,77,36)
+}
+  
+nav > a:hover, nav > #contagem:hover {
+	color: rgb(201,77,36);
+}
+  
+.navbar .icon {
+	display: none;
+	position: relative;
+	bottom: 30px;
+	cursor: pointer;
 }
   
 .barra {
@@ -354,9 +371,8 @@ footer {
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: row;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	}
+	padding: 20px 0px;
+}
 	
 .contacto > a {
 	text-decoration: none;
@@ -382,5 +398,87 @@ footer {
 	position: relative;
 	left: 40px;
 }
+		
+@media screen and (max-width: 1200px) and (min-width:769px) {
+.navbar a {
+	display: none;
+	font-size: 16px;
+	margin: 5px;
+}
+	  
+.navbar .icon {
+	bottom: 15px;
+}
+	  
+.navbar a.icon {
+	float: right;
+	display: block;
+}
+	  
+.navbar.responsive {
+	position: relative;
+}
+	  
+.navbar.responsive a.icon {
+	position: absolute;
+	right: 0px;
+	bottom: 70px;
+}
+	  
+.navbar.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+}
 
+.form {
+	width: 450px;
+	height: 450px;
+}
 
+.forms {
+	padding: 15px;
+}	
+}
+
+@media screen and (max-width: 768px) {
+.navbar a {
+	display: none;
+	font-size: 16px;
+	margin: 5px;
+}
+	  
+.navbar .icon {
+	bottom: 10px;
+}
+		  
+.navbar a.icon {
+	float: right;
+	display: block;
+}
+		  
+.navbar.responsive {
+	position: relative;
+}
+		  
+.navbar.responsive a.icon {
+	position: absolute;
+	right: 0px;
+	bottom: 70px;
+}
+		  
+.navbar.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+}
+	  
+.form {
+	width: 400px;
+	height: 400px;
+}
+
+.forms {
+	padding: 10px;
+}
+}

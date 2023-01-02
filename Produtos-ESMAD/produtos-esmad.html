@@ -13,11 +13,16 @@
             <img id="logo-header" src="PPorto—cor—vazado-01.png" alt="logótipo do Instituto Politécnico do Porto" title="Instituto Politécnico do Porto"
             width="162" height="36">
         </div>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="#" class="seccoes" id="inicio">Início</a>
             <a href="#" class="seccoes" id="produtos">Produtos</a>
             <a href="#" class="seccoes" id="conta">Conta</a>
-            <a href="#" class="seccoes" id="carrinho-de-compras">Carrinho de compras</a>
+            <a href="../carrinho/carrinho.html" class="seccoes" id="carrinho-de-compras">Carrinho-de-compras
+                <span id="contagem">0</span>
+            </a>
+            <a class="icon" onclick="navbar()">
+                <img src="navbar.svg">
+            </a>
         </nav>
     </header>
 
@@ -26,86 +31,80 @@
             <p class="barra">&nbsp;</p>
         </div>
         <div>
-            <img src="imageHighlight.jpeg" width="1400px" height="450px" id="imagem-esmad">
+            <img src="imageHighlight.jpeg" alt="Imagem institucional da ESMAD" id="imagem-esmad">
         </div>
         <div>
             <h2 class="barra">Escola Superior de Media Artes e Design (ESMAD)</h2>
         </div>
-        <div>
-            <div class="row-produtos">
-                <div class="card">
+        <div class="row-produtos">
+            <div class="card">
                 <div class="imagem-produto">
                     <img src="tote-preta-1.png" height="300px">
                 </div>
                 <div class="descricao">
-                    <h2>TOTEBAG ESMAD</h2>
+                    <h2>TOTEBAG PRETA ESMAD</h2>
                     <h1>10€</h1>
                     <p>Totebag feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
-                    <button><a href="#">ADICIONAR AO CARRINHO</a></button>
+                    <button>ADICIONAR AO CARRINHO</button>
                 </div>
+            </div>
+            <div class="card">
+                <div class="imagem-produto">
+                    <img src="tote-branca-1.png" height="300px">
                 </div>
-                <div class="card">
-                    <div class="imagem-produto">
-                        <img src="tote-branca-1.png" height="300px">
-                    </div>
-                    <div class="descricao">
-                        <h2>TOTEBAG ESMAD</h2>
-                        <h1>10€</h1>
-                        <p>Totebag feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
-                        <button><a href="#">ADICIONAR AO CARRINHO</a></button>
-                    </div>
+                <div class="descricao">
+                    <h2>T-SHIRT PRETA ESMAD</h2>
+                    <h1>10€</h1>
+                    <p>Totebag feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
+                    <button>ADICIONAR AO CARRINHO</button>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="row-produtos">
-                <div class="card">
+        <div class="row-produtos">
+            <div class="card">
                 <div class="imagem-produto">
                     <img src="tshirt-branca-1.png" height="300px">
                 </div>
                 <div class="descricao">
-                    <h2>T-SHIRT ESMAD</h2>
+                    <h2>T-SHIRT BRANCA ESMAD</h2>
                     <h1>15€</h1>
                     <p>T-shirt feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
-                    <button><a href="#">ADICIONAR AO CARRINHO</a></button>
+                    <button>ADICIONAR AO CARRINHO</button>
                 </div>
+            </div>
+             <div class="card">
+                <div class="imagem-produto">
+                    <img src="tshirt-preta-1.png" height="300px">
                 </div>
-                <div class="card">
-                    <div class="imagem-produto">
-                        <img src="tshirt-preta-1.png" height="300px">
-                    </div>
-                    <div class="descricao">
-                        <h2>T-SHIRT ESMAD</h2>
-                        <h1>15€</h1>
-                        <p>T-shirt feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
-                        <button><a href="#">ADICIONAR AO CARRINHO</a></button>
-                    </div>
+                <div class="descricao">
+                    <h2>T-SHIRT PRETA ESMAD</h2>
+                    <h1>15€</h1>
+                    <p>T-shirt feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
+                    <button>ADICIONAR AO CARRINHO</button>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="row-produtos">
-                <div class="card">
+        <div class="row-produtos">
+            <div class="card">
                 <div class="imagem-produto">
                     <img src="sweat-preta-1.png" height="300px">
                 </div>
                 <div class="descricao">
-                    <h2>SWEATSHIRT ESMAD</h2>
+                    <h2>SWEATSHIRT PRETA ESMAD</h2>
                     <h1>20€</h1>
                     <p>Sweatshirt feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
-                    <button><a href="#">ADICIONAR AO CARRINHO</a></button>
+                    <button class="sweat">ADICIONAR AO CARRINHO</button>
                 </div>
+            </div>
+            <div class="card">
+                <div class="imagem-produto">
+                    <img src="sweat-branca-1.png" height="300px">
                 </div>
-                <div class="card">
-                    <div class="imagem-produto">
-                        <img src="sweat-branca-1.png" height="300px">
-                    </div>
-                    <div class="descricao">
-                        <h2>SWEATSHIRT ESMAD</h2>
-                        <h1>20€</h1>
-                        <p>Sweatshirt feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
-                        <button><a href="#">ADICIONAR AO CARRINHO</a></button>
-                    </div>
+                <div class="descricao">
+                    <h2>SWEATSHIRT BRANCA ESMAD</h2>
+                    <h1>20€</h1>
+                    <p>Sweatshirt feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
+                    <button class="sweat">ADICIONAR AO CARRINHO</button>
                 </div>
             </div>
         </div>
@@ -131,5 +130,6 @@
             <p>TW Grupo 13 &copy;</p>
         </div>
     </footer>
+    <script src="produtos-esmad.js"></script>
 </body>
 </html>

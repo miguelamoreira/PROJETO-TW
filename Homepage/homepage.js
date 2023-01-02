@@ -33,3 +33,12 @@ if (id in carrinho) {
 function updateCarrinho() {
     document.getElementById("contagem").textContent = contagem;
 }
+
+function navbar() {
+    var x = document.getElementById("navbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+}

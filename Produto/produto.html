@@ -11,13 +11,18 @@
     <header>
         <div>
             <img id="logo-header" src="PPorto—cor—vazado-01.png" alt="logótipo do Instituto Politécnico do Porto" title="Instituto Politécnico do Porto"
-            width="162" height="36">
+            width="180" height="40">
         </div>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="#" class="seccoes" id="inicio">Início</a>
             <a href="#" class="seccoes" id="produtos">Produtos</a>
             <a href="#" class="seccoes" id="conta">Conta</a>
-            <a href="#" class="seccoes" id="carrinho-de-compras">Carrinho de compras</a>
+            <a href="../carrinho/carrinho.html" class="seccoes" id="carrinho-de-compras">Carrinho-de-compras
+                <span id="contagem">0</span>
+            </a>
+            <a class="icon" onclick="navbar()">
+                <img src="navbar.svg">
+            </a>
         </nav>
     </header>
 
@@ -26,38 +31,42 @@
             <p class="barra">&nbsp;</p>
         </div>
         
-        <section class="pagina-produto">
-            <div class="card-produto"> <!-- Talvez fazer um "carrossel" com estas imagens -->
+        <div class="pagina-produto">
+            <div class="card-produto">
                 <div class="card">
                     <div class="imagens-produto">
-                        <img src="tshirt-branca-1.png" height="600px">
+                        <img src="tshirt-branca-1.png" class="imagem-produto">
                     </div>
                 </div>
                 <div class="card">
                     <div class="imagens-produto">
-                        <img src="tshirt-branca-2.png" height="600px">
+                        <img src="tshirt-branca-2.png" class="imagem-produto">
                     </div>
+                </div>
+                <div>
+                <button class="antes" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="depois" onclick="plusSlides(1)">&#10095;</button>
                 </div>
             </div>
             <div class="info">
-                <h1>T-SHIRT ESMAD</h1>
+                <h1>T-SHIRT BRANCA ESMAD</h1>
                 <h2>15€</h2>
                 <p>T-shirt feita de algodão com o logótipo da Escola de Media Artes e Design (ESMAD) do Instituto Politécnico do Porto.<br>
                 Cor branca com logótipo a preto.</p>
                 <div class="tamanhos">
-                    <button><a href="#">XS</a></button>
-                    <button><a href="#">S</a></button>
-                    <button><a href="#">M</a></button>
-                    <button><a href="#">L</a></button>
-                    <button><a href="#">XL</a></button>
+                    <button>XS</button>
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
                 </div>
                 <div class="quantidade">
                     <label for="quant">Quantidade:</label>
                     <input type="number" name="quant" id="quant" min="1" max="10">
                 </div>
-                <button><a href="#">ADICIONAR AO CARRINHO</a></button>
+                <button class="adicionar-carrinho">ADICIONAR AO CARRINHO</button>
             </div>
-        </section>
+        </div>
 
         <div>
             <h2 class="barra">PRODUTOS SUGERIDOS</h2>
@@ -68,10 +77,10 @@
                 <img src="tote-preta-1.png" height="300px">
             </div>
             <div class="descricao">
-                <h2>TOTEBAG ESMAD</h2>
+                <h2>TOTEBAG PRETA ESMAD</h2>
                 <h1>10€</h1>
                 <p>Totebag feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
-                <button><a href="#">ADICIONAR AO CARRINHO</a></button>
+                <button class="adicionar-carrinho">ADICIONAR AO CARRINHO</button>
             </div>
             </div>
             <div class="card-sugestao">
@@ -79,10 +88,10 @@
                     <img src="tote-branca-1.png" height="300px">
                 </div>
                 <div class="descricao">
-                    <h2>TOTEBAG ESMAD</h2>
+                    <h2>TOTEBAG BRANCA ESMAD</h2>
                     <h1>10€</h1>
                     <p>Totebag feita de algodão com o logótipo da Escola Superior de Media Artes e Design</p>
-                    <button><a href="#">ADICIONAR AO CARRINHO</a></button>
+                    <button class="adicionar-carrinho">ADICIONAR AO CARRINHO</button>
                 </div>
             </div>
         </div>
@@ -90,7 +99,7 @@
 
     <footer>
         <div>
-            <img id="logo-footer" src="PPorto—branco—vazado-01.png" alt="Logótipo do Instituto Politécnico do Porto" width="162" height="36">
+            <img id="logo-footer" src="PPorto—branco—vazado-01.png" alt="Logótipo do Instituto Politécnico do Porto" width="180" height="40">
         </div>
         <div class="morada">
             <h4 class="morada-titulo">COMO CHEGAR AO P. PORTO</h4>
@@ -108,5 +117,6 @@
             <p>TW Grupo 13 &copy;</p>
         </div>
     </footer>
+    <script src="produtos.js"></script>
 </body>
 </html>

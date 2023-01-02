@@ -5,68 +5,74 @@ body {
 	background-color: (255, 255, 255);
 	color: (0, 0, 0);
 	margin: 80px auto 48px auto;
-  }
+}
   
-  header {
+header {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
 	flex-direction: row;
-	padding-bottom: 30px;
-  }
+}
   
-  #logo-header {
+#logo-header {
 	position: relative;
 	left: 40px;
-  }
+  bottom: 10px;
+}
   
-  nav > a {
-	text-decoration: none;
-	color: rgb(201, 77, 36);
-	font-size: 20px;
-	font-weight: bold;
-	text-align: right;
-	margin: 30px;
-	transition: color 4s, text-decoration 4s;
-  }
+nav > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin: 30px;
+  transition: color 4s, text-decoration 4s;
+}
+
+nav > a:hover {
+  color: rgb(201,77,36);
+}
+
+.navbar .icon {
+  display: none;
+  position: relative;
+  bottom: 30px;
+  cursor: pointer;
+}
   
-  nav > a:hover {
-	color: rgba(201,77,36,0.5);
-	text-decoration: underline;
-  }
-  
-  .barra-header {
-    padding: 10px;
-    border-bottom: 1px dotted black;
-    border-top: 1px dotted black;
-    background-color: rgba(0,0,0,0.1);
+.barra-header {
+  padding: 10px;
+  border-bottom: 1px dotted black;
+  border-top: 1px dotted black;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .barra {
-    margin: 0 0 0 0;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: rgba(0,0,0,0.1);
+  margin: 0 0 0 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.1);
 }
 
 h2, h3 {
-    text-align: center
+  text-align: center
 }
 
 .container-carrinho {
-    width: 950px;
-    padding: 30px;
-    background: rgb(255,255,255);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-    transition: all 0.3s;
-    margin: auto auto 35px;
-    display: flex;
-    flex-flow: column wrap;
+  width: 950px;
+  padding: 30px;
+  background: rgb(255,255,255);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+  transition: all 0.3s;
+  margin: auto auto 35px;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .container-carrinho:hover {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .quantidade select {
@@ -74,85 +80,84 @@ h2, h3 {
 	width: 100px;
 	transition: all 0.3s ease;
 	font-weight: 500;
-  }
+}
 
-  .card {
-    width: 950px;
-    height:350px;
-    background: rgb(255,255,255);
-    margin: 0px auto;
-    display: flex; 
-    }
+.card {
+  width: 950px;
+  height:350px;
+  background: rgb(255,255,255);
+  margin: 0px auto;
+  display: flex; 
+}
   
-    .card .imagem-produto {
-    padding: 20px;
-    width: 40%;
-    text-align: center;
-    float: left;
-    }
+.card .imagem-produto {
+  padding: 20px;
+  width: 40%;
+  text-align: center;
+  float: left;
+}
     
-    .card .descricao {
-    padding: 60px;
-    float: left;
-    width: 55%;
-    }
+.card .descricao {
+  padding: 60px;
+  float: left;
+  width: 55%;
+}
 
-    .card .descricao span {
-    color: rgb(0,0,0);
-    font-weight: 200;
-    font-size: 20px;
-    position: relative;
-    left: 100px;
-    }
+.card .descricao span {
+  color: rgb(0,0,0);
+  font-weight: 200;
+  font-size: 20px;
+  position: relative;
+  left: 100px;
+}
     
-    .card .descricao h2 {
-      color: rgba(0,0,0,0.6);
-      margin: 0;
-      font-weight: 400;
-    }
+.card .descricao h2 {
+  color: rgba(0,0,0,0.6);
+  margin: 0;
+  font-weight: 400;
+}
     
-    .card .descricao p {
-    font-size: 12px;
-    color: rgba(0,0,0,0.5);
-    padding: 20px 0px;
-    }
+.card .descricao p {
+  font-size: 12px;
+  color: rgba(0,0,0,0.5);
+  padding: 20px 0px;
+}
  
-    button {
-    border: 1px solid rgba(0,0,0, 0.5);
-    padding: 10px;
-    margin-top: 60px;
-    width: 200px;
-    margin-right: 5px;
-    transition: all 0.3s ease;
-    font-weight: 500;
-    }
+button {
+  border: 1px solid rgba(0,0,0, 0.5);
+  padding: 10px;
+  margin-top: 60px;
+  width: 200px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
     
-  .checkout {
-    margin: 0px auto;
-  }
+.checkout {
+  margin: 0px auto;
+}
 
-  .button-checkout {
-    width: 200px;
-    height: 50px;
-  }
+.button-checkout {
+  width: 200px;
+  height: 50px;
+}
 
-    .button-checkout a {
-    text-decoration: none;
-    color: rgb(0,0,0);
-    position: relative;
-    }
+.button-checkout a {
+  text-decoration: none;
+  color: rgb(0,0,0);
+  position: relative;
+}
     
-    button:hover {
-    border: 1px solid rgb(201, 77, 36);
-    color: rgb(201, 77, 36);
-    }
+button:hover {
+  border: 1px solid rgb(201, 77, 36);
+  color: rgb(201, 77, 36);
+}
     
-   .button-checkout a:hover {
-    color: rgb(201, 77, 36);
-    }
+.button-checkout a:hover {
+  color: rgb(201, 77, 36);
+}
 
-
-  footer {
+footer {
 	background-color: gray;
 	position: absolute;
 	width: 100%;
@@ -160,33 +165,114 @@ h2, h3 {
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: row;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px 0px;
 	}
 	
-	.contacto > a {
-	  text-decoration: none;
-	  color: rgb(0,0,0);
-	}
+.contacto > a {
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
 	
-	.contacto {
-	  position: relative;
-	  right: 40px;
-	}
+.contacto {
+	position: relative;
+	right: 40px;
+}
 	
-  .contacto-titulo {
+.contacto-titulo {
 	background-color: rgb(168, 167, 167);
 	padding: 10px;
 	transform: fade-in background-color 5s;
-  }
+}
 	
-  .contacto-titulo:hover {
+.contacto-titulo:hover {
 	background-color: rgba(168, 167, 167, 0.5);
-  }
+}
 	
-  #logo-footer {
+#logo-footer {
 	position: relative;
 	left: 40px;
-  }
-	
+}
+	  
+@media screen and (max-width: 1200px) and (min-width:769px) {
+.navbar a {
+  display: none;
+  font-size: 16px;
+  margin: 5px;
+}
+  
+.navbar .icon {
+  bottom: 15px;
+}
+  
+.navbar a.icon {
+  float: right;
+  display: block;
+}
+  
+.navbar.responsive {
+  position: relative;
+}
+  
+.navbar.responsive a.icon {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+}
+  
+.navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.container-carrinho {
+  width: 700px;
+  padding: 30px;
+}
+
+.card {
+  width: 700px;
+}
+}
+  
+@media screen and (max-width: 768px) {
+.navbar a {
+  display: none;
+  font-size: 16px;
+  margin: 5px;
+}
+  
+.navbar .icon {
+  bottom: 10px;
+}
+      
+.navbar a.icon {
+  float: right;
+  display: block;
+}
+      
+.navbar.responsive {
+  position: relative;
+}
+      
+.navbar.responsive a.icon {
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+}
+      
+.navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+} 
+
+.container-carrinho {
+  width: 500px;
+}
+  
+.card {
+  width: 500px;
+}
+}
   
