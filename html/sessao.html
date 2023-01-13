@@ -27,57 +27,51 @@
 </header>
   <main>
     <div>
-        <p class="barra">&nbsp;</p>
+        <p class="barra-header">&nbsp;</p>
     </div>
-  <section class="forms-section">
-    <h1 class="section-title">CONTA</h1>
-    <div class="forms">
-      <div class="form-wrapper is-active">
-        <button type="button" class="switcher switcher-login">
-          Entrar
-          <span class="underline"></span>
-        </button>
-        <form class="form form-login">
-          <fieldset>
-            <legend>Por favor, insira o seu e-mail e a palavra-passe para entrar na sua conta</legend>
-            <div class="input-block">
-              <label for="login-email">E-mail</label>
-              <input id="login-email" type="email" required>
-            </div>
-            <div class="input-block">
-              <label for="login-password">Palavra-passe</label>
-              <input id="login-password" type="password" required>
-            </div>
-          </fieldset>
-          <button type="submit" class="btn-login">Login</button>
-        </form>
+    <div class="main">  	
+      <input type="checkbox" id="chk" aria-hidden="true">
+          <div class="registo">
+              <form action="conta.html" method="post" class="form">
+                  <h2 class="barra">Registo de conta</h2>
+                  <div class="nome">
+                      <label for="nome-registo">Nome:</label>
+                      <input type="text" name="nome-registo" id="nome-registo" required>
+                  </div>
+                  <div class="email">
+                      <label for="email-registo">E-mail:</label>
+                      <input type="email" name="email-registo" id="email-registo" required>
+                  </div>
+                  <div class="password">
+                      <label for="passe-registo">Palavra-passe:</label>
+                      <input type="password" name="passe-registo" id="passe-registo" required>
+                  </div>
+                  <div>
+                      <input type="submit" value="Registar">
+                      <p class="message">Já tem conta? </p>
+                      <label class="message" for="chk" aria-hidden="true"><a for="chk" aria-hidden="true">Inicie sessão</a></p>
+                  </div>
+              </form>
+          </div>
+  
+          <div class="login">
+              <form action="conta.html" method="post" class="form">
+                  <h2 class="barra">Início de sessão</h2>
+                  <div class="email">
+                      <label for="email-login">E-mail:</label>
+                      <input type="email" name="email-login" id="email-login" required>
+                  </div>
+                  <div class="password">
+                      <label for="passe-login">Palavra-passe:</label>
+                      <input type="password" name="passe-login" id="passe-login" required>
+              </div>
+              <div>
+                  <input type="submit" value="Entrar">
+                  <p class="message">Ainda não tem conta? </p>
+                  <label for="chk" aria-hidden="true" class="message"><a>Registe-se</a></label>
+              </div>
+          </form>
       </div>
-      <div class="form-wrapper">
-        <button type="button" class="switcher switcher-signup">
-          Registar
-          <span class="underline"></span>
-        </button>
-        <form class="form form-signup">
-          <fieldset>
-            <legend>Por favor, insira o seu e-mail, palavra-passe e a confirmação da mesma para se registar</legend>
-            <div class="input-block">
-              <label for="signup-email">E-mail</label>
-              <input id="signup-email" type="email" required>
-            </div>
-            <div class="input-block">
-              <label for="signup-password">Palavra-passe</label>
-              <input id="signup-password" type="password" required>
-            </div>
-            <div class="input-block">
-              <label for="signup-password-confirm">Confirme a palavra-passe</label>
-              <input id="signup-password-confirm" type="password" required>
-            </div>
-          </fieldset>
-          <button type="submit" class="btn-signup">Continue</button>
-        </form>
-      </div>
-    </div>
-  </section>
 </main>
 <footer>
   <div>

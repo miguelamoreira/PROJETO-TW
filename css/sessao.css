@@ -58,309 +58,143 @@ nav > a:hover, nav > #contagem:hover {
 	cursor: pointer;
 }
   
+.barra-header {
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    border-top: 1px dotted black;
+    background-color: rgba(0,0,0,0.1);
+}
+
 .barra {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  border-bottom: 1px dotted black;
-  border-top: 1px dotted black;
-  background-color: rgba(0,0,0,0.1);
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.1);
 }
 
-.forms-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+h1, h2 {
+    text-align: center
 }
 
-.section-title {
-	font-size: 32px;
-	letter-spacing: 1px;
-	color: rgb(0, 0, 0);
-}
-
-.forms {
-  	align-items: flex-start;
-	margin: 30px 0px;
-  	display: flex;
+.main {
+    width: 650px;
+    height: 480px;
+    padding: 30px;
+    background: rgb(255,255,255);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
+    transition: all 0.3s;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: column wrap;
 	overflow: hidden;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 30px 20px;
-	transform-origin: top;
 }
 
-.form-wrapper {
-	animation: hideLayer .3s ease-out forwards;
-}
-
-.form-wrapper.is-active {
-	animation: showLayer .3s ease-in forwards;
-}
-
-@keyframes showLayer {
-	50% {
-		z-index: 1;
-	}
-	100% {
-		z-index: 1;
-	}
-}
-
-@keyframes hideLayer {
-	0% {
-		z-index: 1;
-	}
-	49.999% {
-		z-index: 1;
-	}
-}
-
-.switcher {
-	position: relative;
-	cursor: pointer;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 0;
-	text-transform: uppercase;
-	font-family: inherit;
-	font-size: 16px;
-	letter-spacing: .5px;
-	color: #999;
-	background-color: transparent;
-	border: none;
-	outline: none;
-	transform: translateX(0);
-	transition: all .3s ease-out;
-}
-
-.switcher:hover {
-	color: rgb(201, 77, 36);
-}
-
-.form-wrapper.is-active .switcher-login {
-	color: rgb(201, 77, 36);
-	transform: translateX(175px);
-}
-
-.form-wrapper.is-active .switcher-signup {
-	color: rgb(201, 77, 36);
-	transform: translateX(-175px);
-}
-
-.underline {
-	position: absolute;
-	bottom: -5px;
-	left: 0;
-	overflow: hidden;
-	pointer-events: none;
-	width: 100%;
-	height: 2px;
-}
-
-.underline::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: inherit;
-	display: block;
-	width: inherit;
-	height: inherit;
-	background-color: currentColor;
-	transition: transform .2s ease-out;
-}
-
-.switcher-login .underline::before {
-	transform: translateX(101%);
-}
-
-.switcher-signup .underline::before {
-	transform: translateX(-101%);
-}
-
-.form-wrapper.is-active .underline::before {
-	transform: translateX(0);
-}
-
-.form {
-	overflow: hidden;
-	width: 500px;
-	height: 500px;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 30px 25px;
-	transform-origin: top;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.10);
-	transition: all .3s ease-out;
-}
-
-.form:hover {
+.main:hover {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
-.form-login {
-	animation: hideLogin .3s ease-out forwards;
+.registo {
+    position: relative;
+    width:100%;
+    height: 100%;
 }
 
-.form-wrapper.is-active .form-login {
-	animation: showLogin .3s ease-in forwards;
+.login {
+    width: 590px;
+    height: 480px;
+    position: relative;
+    right: 590px;
+	background: rgb(255,255,255);
+	transform: translateY(500px);
+	transition: .8s ease-in-out;
 }
 
-@keyframes showLogin {
-	0% {
-		background: rgba(0, 0, 0, 0.15);
-		transform: translate(40%, 10px);
-	}
-	50% {
-		transform: translate(0, 0);
-	}
-	100% {
-		background-color: #fff;
-		transform: translate(35%, -20px);
-	}
+.form {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-@keyframes hideLogin {
-	0% {
-		background-color: #fff;
-		transform: translate(35%, -20px);
-	}
-	50% {
-		transform: translate(0, 0);
-	}
-	100% {
-		background: rgba(0, 0, 0, 0.15);
-		transform: translate(40%, 10px);
-	}
+.form input {
+    border: 1px solid rgba(0,0,0, 0.5);
+    padding: 10px;
+    margin-top: 30px;
+    width: 200px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+    
+.form input {
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+    
+.form input:hover {
+    border: 1px solid rgb(201, 77, 36);
 }
 
-.form-signup {
-	animation: hideSignup .3s ease-out forwards;
+.nome {
+    position: relative;
+    right: 22px;
 }
 
-.form-wrapper.is-active .form-signup {
-	animation: showSignup .3s ease-in forwards;
+
+#nome-registo {
+    position: relative;
+    left: 50px;
 }
 
-@keyframes showSignup {
-	0% {
-		background: rgba(0, 0, 0, 0.15);
-		transform: translate(-40%, 10px) scaleY(.8);
-	}
-	50% {
-		transform: translate(0, 0) scaleY(.8);
-	}
-	100% {
-		background-color: #fff;
-		transform: translate(-35%, -20px) scaleY(1);
-	}
+.email {
+    position: relative;
+    right: 22px;
 }
 
-@keyframes hideSignup {
-	0% {
-		background-color: #fff;
-		transform: translate(-35%, -20px) scaleY(1);
-	}
-	50% {
-		transform: translate(0, 0) scaleY(.8);
-	}
-	100% {
-		background: rgba(0, 0, 0, 0.15);
-		transform: translate(-40%, 10px) scaleY(.8);
-	}
+#email-registo, #email-login {
+    position: relative;
+    left: 48px;
 }
 
-.form fieldset {
-	position: relative;
-	opacity: 0;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	transition: all .3s ease-out;
+#submit {
+    position: relative;
+    text-align: center;
+    margin: 30px;
 }
 
-.form-login fieldset {
-	transform: translateX(-50%);
+.form input[type="submit"] {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+.form input[type="submit"]:hover {
+    color:rgb(201, 77, 36);
 }
 
-.form-signup fieldset {
-	transform: translateX(50%);
+.form .message a {
+    color: rgb(0,0,0);
+    text-decoration: underline;
+  }
+
+.form .message a:hover {
+    color: rgb(201, 77, 36);
+    text-decoration: none;
 }
 
-.form-wrapper.is-active fieldset {
-	opacity: 1;
-	transform: translateX(0);
-	transition: opacity .4s ease-in, transform .35s ease-in;
+#chk{
+	display: none;
 }
 
-.form legend {
-	position: absolute;
-	overflow: hidden;
-	width: 1px;
-	height: 1px;
-	clip: rect(0 0 0 0);
+#chk:checked ~ .login{
+	transform: translateY(-2px);
 }
-
-.input-block {
-	margin-bottom: 20px;
+#chk:checked ~ .login label{
+	transform: scale(1);	
 }
-
-.input-block label {
-	font-size: 14px;
- 	color: rgba(0,0,0, 1);
-}
-
-.input-block input {
-	display: block;
-	width: 100%;
-	margin-top: 8px;
-	padding-right: 15px;
-	padding-left: 15px;
-	font-size: 16px;
-	line-height: 40px;
-  	border: 1px solid rgb(0, 0, 0);
-}
-
-.form [type='submit'] {
-	opacity: 0;
-	display: block;
-	min-width: 120px;
-	margin: 30px auto 10px;
-	font-size: 18px;
-	line-height: 40px;
-	border: 1px solid rgba(0,0,0, 0.5);
-	transition: all .3s ease-out;
-}
-
-.form-wrapper.is-active .form [type='submit'] {
-	opacity: 1;
-	transform: translateX(0);
-	transition: all .4s ease-in;
-}
-
-.btn-login {
-	color: rgb(0,0,0);
-	transform: translateX(-30%);
-}
-
-.btn-signup {
-	color: rgb(0, 0, 0);
-	transform: translateX(30%);
-}
-
-.btn-login:hover, .btn-signup:hover, .form input:hover {
-	border: 1px solid rgb(201, 77, 36);
-	cursor: pointer;
-}
-
-.btn-login:hover, .btn-signup:hover {
-	color: rgb(201, 77, 36)
+#chk:checked ~ .signup label{
+	transform: scale(.6);
 }
 
 footer {
