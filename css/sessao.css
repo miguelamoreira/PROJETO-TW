@@ -33,7 +33,7 @@ nav > a {
 	font-weight: bold;
 	text-align: right;
 	margin: 30px;
-	transition: color 4s, text-decoration 4s;
+	transition: color 0.5s, text-decoration 0.5s;
 }
   
 #contagem {
