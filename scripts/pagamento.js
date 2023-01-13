@@ -8,7 +8,11 @@ function navbar() {
 }
 
 function pagamento() {
+  var numCartao = document.getElementById("num-cartao").value;
+  var nomeCartao = document.getElementById("nome-cartao").value;
+  var valCartao = document.getElementById("val-cartao").value;
+  var cvvCartao = document.getElementById("cvv-cartao").value;
+  if (numCartao != "" && nomeCartao != "" && valCartao != "" && cvvCartao != "") {
     alert("Pagamento efetuado com sucesso!")
+  }
 }
-
-
