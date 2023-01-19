@@ -193,86 +193,101 @@ footer {
 	left: 40px;
 }
 	  
+	  
 @media screen and (max-width: 1200px) and (min-width:769px) {
 .navbar a {
   display: none;
   font-size: 16px;
   margin: 5px;
 }
-  
+    
 .navbar .icon {
   bottom: 15px;
 }
-  
+    
 .navbar a.icon {
   float: right;
   display: block;
 }
-  
+    
 .navbar.responsive {
   position: relative;
 }
-  
+    
 .navbar.responsive a.icon {
   position: absolute;
   right: 0px;
   bottom: 70px;
 }
-  
+    
 .navbar.responsive a {
   float: none;
   display: block;
   text-align: left;
 }
-
+  
 .container-carrinho {
   width: 700px;
   padding: 30px;
 }
-
+  
 .card {
   width: 700px;
 }
 }
-  
+    
 @media screen and (max-width: 768px) {
 .navbar a {
   display: none;
   font-size: 16px;
   margin: 5px;
 }
-  
+    
 .navbar .icon {
   bottom: 10px;
 }
-      
+        
 .navbar a.icon {
   float: right;
   display: block;
 }
-      
+        
 .navbar.responsive {
   position: relative;
 }
-      
+        
 .navbar.responsive a.icon {
   position: absolute;
   right: 0px;
   bottom: 70px;
 }
-      
+        
 .navbar.responsive a {
   float: none;
   display: block;
   text-align: left;
 } 
-
+  
 .container-carrinho {
   width: 500px;
 }
-  
+    
 .card {
   width: 500px;
+}
+  
+.remover-btn{
+  margin-top: 15px;
+}
+  
+.quantidade {
+  position: relative;
+  bottom: 20px;
+}
+  
+.preco {
+  position: relative;
+  top: 10px;
 }
 }
   
